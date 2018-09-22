@@ -1,0 +1,6 @@
+[nginx-servers]
+server01
+server02
+[java-servers]
+server03
+server04

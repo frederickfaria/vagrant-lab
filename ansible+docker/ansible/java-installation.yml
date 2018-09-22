@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Installing java JRE
+    apt: name=default-jre state=present

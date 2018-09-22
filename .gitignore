@@ -1,0 +1,5 @@
+*.iml
+*.log
+*.vagrant
+.DS_Store
+.idea

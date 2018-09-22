@@ -1,0 +1,32 @@
+version: '2'
+services:
+  server01:
+    container_name: server01  
+    image: ubuntu:custom
+    networks: 
+      internalNetwork:
+        ipv4_address: 172.18.0.10
+  server02:
+    container_name: server02
+    image: ubuntu:custom
+    networks:
+      internalNetwork:
+        ipv4_address: 172.18.0.11
+  server03:
+    container_name: server03
+    image: ubuntu:custom
+    networks:
+      internalNetwork:
+        ipv4_address: 172.18.0.12
+  server04:
+    container_name: server04
+    image: ubuntu:custom
+    networks:
+      internalNetwork:
+        ipv4_address: 172.18.0.13
+networks:
+  internalNetwork:
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+          gateway: 172.18.0.1
